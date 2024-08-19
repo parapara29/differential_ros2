@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "includePath": [
+                "/opt/ros/humble/include/**",
+                "/home/paradox/freelancing_ws/src/diff_drive_controller/include/**",
+                "/usr/include/**",
+                "${workspaceFolder}/differential_bot_controller/include",
+                "/opt/ros/humble/include/builtin_interfaces",
+                "/opt/ros/humble/include/geometry_msgs",
+                "/opt/ros/humble/include/tracetools"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}

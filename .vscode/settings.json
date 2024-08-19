@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/paradox/freelancing_ws/install/diff_bot_description/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "/media/paradox/programming/python_libs"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/paradox/freelancing_ws/install/diff_bot_description/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "/media/paradox/programming/python_libs"
+    ],
+    "cmake.sourceDirectory": "/home/paradox/freelancing_ws/src/diff_drive_controller",
+    "files.associations": {
+        "chrono": "cpp"
+    }
+}
