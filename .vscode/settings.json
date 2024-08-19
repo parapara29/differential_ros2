@@ -11,7 +11,7 @@
         "/opt/ros/humble/local/lib/python3.10/dist-packages",
         "/media/paradox/programming/python_libs"
     ],
-    "cmake.sourceDirectory": "/home/paradox/freelancing_ws/src/diff_drive_controller",
+    "cmake.sourceDirectory": "/home/paradox/freelancing_ws/src/differential_bot_controller",
     "files.associations": {
         "chrono": "cpp"
     }
