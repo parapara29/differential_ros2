@@ -7,12 +7,20 @@
             },
             "includePath": [
                 "/opt/ros/humble/include/**",
-                "/home/paradox/freelancing_ws/src/diff_drive_controller/include/**",
                 "/usr/include/**",
                 "${workspaceFolder}/differential_bot_controller/include",
                 "/opt/ros/humble/include/builtin_interfaces",
                 "/opt/ros/humble/include/geometry_msgs",
-                "/opt/ros/humble/include/tracetools"
+                "/opt/ros/humble/include/tracetools",
+                "/opt/ros/humble/include/rcl_interfaces",
+                "/opt/ros/humble/include/libstatistics_collector",
+                "/opt/ros/humble/include/statistics_msgs",
+                "/opt/ros/humble/include/nav_msgs",
+                "/opt/ros/humble/include/std_msgs",
+                "/opt/ros/humble/include/rclcpp_lifecycle",
+                "/opt/ros/humble/include/realtime_tools",
+                "/opt/ros/humble/include/tf2_msgs",
+                "/opt/ros/humble/include/rcl_lifecycle"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",
