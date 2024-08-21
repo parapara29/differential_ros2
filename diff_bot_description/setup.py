@@ -25,7 +25,7 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
+        'console_scripts': ['odom_transform = diff_bot_description.odom_tf:main',
         ],
     },
 )

@@ -20,7 +20,8 @@
                 "/opt/ros/humble/include/rclcpp_lifecycle",
                 "/opt/ros/humble/include/realtime_tools",
                 "/opt/ros/humble/include/tf2_msgs",
-                "/opt/ros/humble/include/rcl_lifecycle"
+                "/opt/ros/humble/include/rcl_lifecycle",
+                "/opt/ros/humble/include/rclcpp"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",

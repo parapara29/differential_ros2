@@ -16,6 +16,11 @@ def generate_launch_description():
     robot_localization_file_path = os.path.join(share_dir, 'config', 'ekf.yaml')
     robot_description_config = xacro.process_file(xacro_file)
     robot_urdf = robot_description_config.toxml()
+    rviz_config_dir = os.path.join(share_dir, 'config', 'display.rviz')
+    world = os.path.join(
+        get_package_share_directory('turtlebot3_gazebo'),
+        'worlds',
+        'turtlebot3_house.world')
 
     robot_state_publisher_node = Node(
         package='robot_state_publisher',
@@ -42,7 +47,8 @@ def generate_launch_description():
             ])
         ]),
         launch_arguments={
-            'pause': 'true'
+            'pause': 'true',
+            'world': world,
         }.items()
     )
 
@@ -90,9 +96,17 @@ def generate_launch_description():
         executable='rviz2',
         name='rviz2',
         output='screen',
+        arguments=['-d', rviz_config_dir],
         parameters=[
             {'use_sim_time': use_sim_time},
+            
         ],
+    )
+
+    odom_node = Node(
+        package='diff_bot_description',
+        executable='odom_transform',
+        name = 'odom_transformer'
     )
 
     robot_localization = Node(
@@ -111,6 +125,8 @@ def generate_launch_description():
         gazebo_client,
         robot_state_publisher_node,
         urdf_spawn_node,
-        robot_localization
+        odom_node,
+        rviz_node,
+        # robot_localization
         # rviz_node,
     ])
