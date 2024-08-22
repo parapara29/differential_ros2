@@ -26,6 +26,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': ['odom_transform = diff_bot_description.odom_tf:main',
+                            'traj_viz = diff_bot_description.visualize_pose:main',
+                            'omni_pub_joint_vel=diff_bot_description.isaac_teleop:main',
+                            'rec_frames=diff_bot_description.rec_frames:main',
         ],
     },
 )
