@@ -24,7 +24,6 @@
   <depend>joint_state_publisher_gui</depend>
   <depend>differential_bot_controller</depend>
   <depend>nav_msgs</depend>
-  <depend>cam_services</depend>
 
   <depend>tf2</depend>
   <depend>tf2_msgs</depend>
